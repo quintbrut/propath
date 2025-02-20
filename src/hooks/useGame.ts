@@ -22,9 +22,12 @@ export const useGame = () => {
   const currentScene: Scene = scenesData[gameState.currentSceneId];
 
   const getDominantCategory = (scores: Score): Category => {
-    return Object.entries(scores).reduce((a, b) => 
-      scores[a as Category] > scores[b[0] as Category] ? a : b[0]
-    ) as Category;
+    const entries = Object.entries(scores);
+    return entries.reduce((acc, curr) => {
+      const [currCategory, currScore] = curr;
+      const [accCategory, accScore] = acc;
+      return currScore > accScore ? curr : acc;
+    })[0] as Category;
   };
 
   const getRandomProfession = (category: Category): string => {
@@ -41,7 +44,6 @@ export const useGame = () => {
         analytical: prev.scores.analytical + (scores?.analytical || 0)
       };
 
-      // Если это сцена результата, определяем профессию
       if (nextSceneId === 'SceneResult') {
         const category = getDominantCategory(newScores);
         const profession = getRandomProfession(category);
