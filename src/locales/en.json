@@ -3,7 +3,8 @@
       "welcome": "Welcome to the Career Guidance Center",
       "name": "What is your name?",
       "age": "How old are you?",
-      "start": "Start journey"
+      "start": "Start journey",
+      "logout": "Logout"
     },
     "result": {
       "congratulations": "Congratulations, {{name}}!",

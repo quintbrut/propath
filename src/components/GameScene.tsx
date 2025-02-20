@@ -4,6 +4,7 @@ import { ResultCard } from './ResultCard';
 import { ProgressBar } from './ProgressBar';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { Copyright } from './Copyright';
+import { useNavigate } from 'react-router-dom';
 
 interface GameSceneProps {
   scene: Scene;
@@ -13,6 +14,7 @@ interface GameSceneProps {
 }
 
 export const GameScene: React.FC<GameSceneProps> = ({ scene, onChoice, scores, t }) => {
+  const navigate = useNavigate();
   const isFinalScene = scene.choices.length === 0;
   const isQuestionScene = scene.id.startsWith('SceneQ');
   const currentQuestion = isQuestionScene ? parseInt(scene.id.replace('SceneQ', '')) : 0;
@@ -48,15 +50,13 @@ export const GameScene: React.FC<GameSceneProps> = ({ scene, onChoice, scores, t
   };
 
   const handleRestart = () => {
-    onChoice('Scene1');
+    localStorage.clear();
+    navigate('/');
   };
 
   if (isFinalScene) {
     return (
       <div className="relative">
-        <div className="absolute top-4 right-4 z-50">
-          <LanguageSwitcher />
-        </div>
         <ResultCard
           professionKey={`profession.${scene.id}`}
           descriptionKey={`scenes.${scene.descriptionKey}`}
@@ -70,9 +70,6 @@ export const GameScene: React.FC<GameSceneProps> = ({ scene, onChoice, scores, t
 
   return (
     <div className="min-h-screen bg-main flex flex-col items-center py-8 px-4">
-      <div className="absolute top-4 right-4 z-50">
-        <LanguageSwitcher />
-      </div>
       <div className="w-full max-w-4xl flex flex-col"> {/* Container for all content */}
         {isQuestionScene && (
           <ProgressBar

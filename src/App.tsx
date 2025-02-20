@@ -10,11 +10,7 @@ const AppContent = () => {
 
   return (
     <div className="min-h-screen w-full">
-      {showLanguageSwitcher && (
-        <div className="absolute top-4 right-4 z-50">
-          <LanguageSwitcher />
-        </div>
-      )}
+    
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/game" element={<GamePage />} />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Score } from '../types/game';
 
 interface ProgressBarProps {
@@ -12,6 +13,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   currentQuestion, 
   totalQuestions 
 }) => {
+  const { t } = useTranslation();
   const progress = (currentQuestion / totalQuestions) * 100;
 
   return (
@@ -23,7 +25,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
         />
       </div>
       <div className="flex justify-between text-white/60 text-sm mt-2">
-        <span>Вопрос {currentQuestion} из {totalQuestions}</span>
+        <span>{t('test.question', { current: currentQuestion, total: totalQuestions })}</span>
       </div>
     </div>
   );

@@ -31,9 +31,6 @@ export const LoginPage = () => {
 
   return (
     <div className="min-h-screen bg-main flex flex-col items-center justify-center py-8 px-4">
-      <div className="absolute top-4 right-4">
-        <LanguageSwitcher />
-      </div>
       <div className="w-full max-w-2xl bg-white rounded-3xl p-6 shadow-xl">
         <div className="flex flex-col gap-6">
           {/* Изображение */}
@@ -82,6 +79,8 @@ export const LoginPage = () => {
           </div>
         </div>
       </div>
+
+      <LanguageSwitcher />
       <Copyright />
     </div>
   );
