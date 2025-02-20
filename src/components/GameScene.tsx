@@ -20,12 +20,7 @@ export const GameScene: React.FC<GameSceneProps> = ({ scene, onChoice, scores, t
   // Динамический импорт изображения
   const getSceneImage = () => {
     try {
-      // Убираем лишнее "scene" из пути
-      const imagePath = `../assets/scenes/${scene.id}.png`;
-      console.log('Trying to load image:', imagePath);
-      const imageUrl = new URL(imagePath, import.meta.url).href;
-      console.log('Generated image URL:', imageUrl);
-      return imageUrl;
+      return `/scenes/${scene.id.toLowerCase()}.png`;
     } catch (error) {
       console.error('Error loading image:', error);
       return null;

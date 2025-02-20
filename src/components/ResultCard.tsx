@@ -23,15 +23,8 @@ export const ResultCard: React.FC<ResultCardProps> = ({
 
   const getProfessionImage = () => {
     try {
-      // Получаем название профессии из ключа и сохраняем полное имя
       const fullProfession = professionKey.split('.').pop() || '';
-      
-      const imagePath = `../assets/scenes/${fullProfession.toLowerCase()}.png`;
-      console.log('Processing profession image:', {
-        fullProfession,
-        imagePath
-      });
-      return new URL(imagePath, import.meta.url).href;
+      return `/scenes/${fullProfession.toLowerCase()}.png`;
     } catch (error) {
       console.error('Error loading profession image:', error);
       return null;

@@ -21,8 +21,7 @@ export const LoginPage = () => {
 
   const getWelcomeImage = () => {
     try {
-      const imagePath = '../assets/scenes/welcome.png';
-      return new URL(imagePath, import.meta.url).href;
+      return '/scenes/welcome.png';
     } catch (error) {
       console.error('Error loading welcome image:', error);
       return null;
