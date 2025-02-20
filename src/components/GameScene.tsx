@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Scene, Score } from '../types/game';
 import { ResultCard } from './ResultCard';
 import { ProgressBar } from './ProgressBar';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { Copyright } from './Copyright';
 
 interface GameSceneProps {
   scene: Scene;
@@ -17,7 +18,26 @@ export const GameScene: React.FC<GameSceneProps> = ({ scene, onChoice, scores, t
   const currentQuestion = isQuestionScene ? parseInt(scene.id.replace('SceneQ', '')) : 0;
   const totalQuestions = 7;
 
-  // Динамический импорт изображения
+  useEffect(() => {
+    const preloadImages = () => {
+      const currentImage = new Image();
+      currentImage.src = `/scenes/${scene.id.toLowerCase()}.png`;
+
+      scene.choices.forEach(choice => {
+        const img = new Image();
+        img.src = `/scenes/${choice.nextSceneId.toLowerCase()}.png`;
+      });
+
+      if (isFinalScene) {
+        const professionImage = new Image();
+        const fullProfession = scene.id.split('.').pop() || '';
+        professionImage.src = `/scenes/${fullProfession.toLowerCase()}.png`;
+      }
+    };
+
+    preloadImages();
+  }, [scene, isFinalScene]);
+
   const getSceneImage = () => {
     try {
       return `/scenes/${scene.id.toLowerCase()}.png`;
@@ -25,6 +45,10 @@ export const GameScene: React.FC<GameSceneProps> = ({ scene, onChoice, scores, t
       console.error('Error loading image:', error);
       return null;
     }
+  };
+
+  const handleRestart = () => {
+    onChoice('Scene1');
   };
 
   if (isFinalScene) {
@@ -38,6 +62,7 @@ export const GameScene: React.FC<GameSceneProps> = ({ scene, onChoice, scores, t
           descriptionKey={`scenes.${scene.descriptionKey}`}
           dialogKey={`scenes.${scene.dialogKey}`}
           scores={scores}
+          onRestart={handleRestart}
         />
       </div>
     );
@@ -102,6 +127,7 @@ export const GameScene: React.FC<GameSceneProps> = ({ scene, onChoice, scores, t
           </div>
         </div>
       </div>
+      <Copyright />
     </div>
   );
 };

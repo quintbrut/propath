@@ -3,19 +3,21 @@ import { toPng } from 'html-to-image';
 import { useTranslation } from 'react-i18next';
 import { Score } from '../types/game';
 import { Button } from './Button';
+import { Copyright } from './Copyright';
 
 interface ResultCardProps {
   professionKey: string;
   descriptionKey: string;
   dialogKey: string;
   scores: Score;
+  onRestart?: () => void;
 }
 
 export const ResultCard: React.FC<ResultCardProps> = ({
   professionKey,
   descriptionKey,
   dialogKey,
-  scores
+  onRestart
 }) => {
   const { t } = useTranslation();
   const cardRef = useRef<HTMLDivElement>(null);
@@ -108,8 +110,8 @@ export const ResultCard: React.FC<ResultCardProps> = ({
                 </Button>
               )}
               <Button
-                onClick={() => window.location.reload()}
-                className="w-full py-4 sm:py-5 px-6 sm:px-8 text-base sm:text-lg font-medium bg-gray-100 text-gray-900 hover:bg-gray-200 active:bg-gray-300"
+                onClick={onRestart}
+                className="w-full py-4 sm:py-5 px-6 sm:px-8 text-base sm:text-lg font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 active:bg-gray-400"
               >
                 {t('result.startOver')}
               </Button>
@@ -117,6 +119,7 @@ export const ResultCard: React.FC<ResultCardProps> = ({
           </div>
         </div>
       </div>
+      <Copyright />
     </div>
   );
 };

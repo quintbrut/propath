@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '../components/Button';
 import { Input } from '../components/Input';
 import { LanguageSwitcher } from '../components/LanguageSwitcher';
+import { Copyright } from '../components/Copyright';
 
 export const LoginPage = () => {
   const [name, setName] = useState('');
@@ -81,6 +82,7 @@ export const LoginPage = () => {
           </div>
         </div>
       </div>
+      <Copyright />
     </div>
   );
 };
