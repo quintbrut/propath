@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  @apply bg-main bg-cover bg-center bg-no-repeat bg-fixed;
+}

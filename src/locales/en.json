@@ -1,0 +1,158 @@
+{
+    "auth": {
+      "welcome": "Welcome to the Career Guidance Center",
+      "name": "What is your name?",
+      "age": "How old are you?",
+      "start": "Start journey"
+    },
+    "result": {
+      "congratulations": "Congratulations, {{name}}!",
+      "yourProfession": "Your profession",
+      "download": "Save result",
+      "share": "Share",
+      "startOver": "Take again"
+    },
+    "home": {
+      "hello": "Hello, {{name}}!",
+      "startTest": "Start test",
+      "viewResults": "View results"
+    },
+    "test": {
+      "question": "Question {{current}} of {{total}}",
+      "next": "Next",
+      "previous": "Back",
+      "finish": "Finish test"
+    },
+    "profession": {
+      "SceneEndArtist": "Artist",
+      "SceneEndDesigner": "Designer",
+      "SceneEndWriter": "Writer",
+      "SceneEndMusician": "Musician",
+      "SceneEndPhotographer": "Photographer",
+      
+      "SceneEndProgrammer": "Programmer",
+      "SceneEndDataScientist": "Data Scientist",
+      "SceneEndWebDeveloper": "Web Developer",
+      "SceneEndNetworkEngineer": "Network Engineer",
+      "SceneEndGameDeveloper": "Game Developer",
+      
+      "SceneEndTeacher": "Teacher",
+      "SceneEndPsychologist": "Psychologist",
+      "SceneEndHRManager": "HR Manager",
+      "SceneEndJournalist": "Journalist",
+      "SceneEndCounselor": "Counselor",
+      
+      "SceneEndAccountant": "Accountant",
+      "SceneEndEconomist": "Economist",
+      "SceneEndResearcher": "Researcher",
+      "SceneEndMathematician": "Mathematician",
+      "SceneEndFinancialAnalyst": "Financial Analyst"
+    },
+    "scenes": {
+      "sceneEntrance_description": "You enter the bright lobby of the Career Guidance Center. Students are bustling around, but consultant Aidos notices you and smiles.",
+      "sceneEntrance_dialog": "Aidos: 'Welcome! Ready to discover your inclination? Then let's go through a short survey!'",
+      "sceneEntrance_choiceStart": "Start test",
+      
+      "sceneQ1_description": "You enter the first section, where various creative and technical items are laid out in front of you. Gulmira, who leads the masterclass, stands nearby.",
+      "sceneQ1_dialog": "Gulmira: 'How do you like to spend your free time? What makes you feel more free?'",
+      "sceneQ1_choiceCreative": "I love drawing, composing music, or any other creative activities",
+      "sceneQ1_choiceTech": "I prefer understanding technology, gadgets, or writing code",
+      "sceneQ1_choiceSocial": "I love communicating, helping people, and being in the thick of things",
+      
+      "sceneQ2_description": "The next section is decorated more seriously. Scientific posters and student projects hang on the walls. Miras welcomes you.",
+      "sceneQ2_dialog": "Miras: 'Imagine you're given a task: how will you look for a solution?'",
+      "sceneQ2_choiceCreative": "First I'll get inspired, maybe try an unconventional approach",
+      "sceneQ2_choiceTech": "I'll make a work plan, apply technology or programming",
+      "sceneQ2_choiceAnalytical": "I'll systematize data, conduct analysis, test hypotheses",
+      
+      "sceneQ3_description": "Now you walk through a corridor where students gather in groups. Sania, the volunteer coordinator, approaches you.",
+      "sceneQ3_dialog": "Sania: 'We have an opportunity to develop an interesting community project. What's your first thought?'",
+      "sceneQ3_choiceTech": "Create a mobile app or website for coordination",
+      "sceneQ3_choiceSocial": "Gather people, have a discussion and assign roles",
+      "sceneQ3_choiceAnalytical": "Analyze resources and risks, calculate the budget",
+      
+      "sceneQ4_description": "The next room looks like a studio. Music plays, easels and art objects are everywhere. Zhanar meets you.",
+      "sceneQ4_dialog": "Zhanar: 'We need to come up with a concept for a new festival. What will you do?'",
+      "sceneQ4_choiceCreative": "I'll immediately imagine a bright image and start developing the visual theme",
+      "sceneQ4_choiceTech": "I'll organize an online platform and technical equipment",
+      "sceneQ4_choiceSocial": "I'll call everyone, find sponsors and partners for the festival",
+      
+      "sceneQ5_description": "Next, you enter a laboratory. The monitor screen is filled with graphs and formulas. Alikhan is in charge of the process.",
+      "sceneQ5_dialog": "Alikhan: 'We have experimental data here, but we need to make a quick conclusion. What will you do?'",
+      "sceneQ5_choiceSocial": "I'll call colleagues, we'll discuss the results together",
+      "sceneQ5_choiceAnalytical": "I'll calculate the data myself, compile a report and verify reliability",
+      "sceneQ5_choiceCreative": "I'll suggest a creative way to visualize and interpret the data",
+      
+      "sceneQ6_description": "Now you move to the IT lab. A technician named Nurbol is ready to show you a new platform.",
+      "sceneQ6_dialog": "Nurbol: 'We can develop something unique, but we need your approach. What will you do?'",
+      "sceneQ6_choiceTech": "I'll do programming, make a prototype",
+      "sceneQ6_choiceSocial": "I'll try to establish collaboration, involve experts and users",
+      "sceneQ6_choiceAnalytical": "I'll gather requirements, carefully study specifications and calculate possibilities",
+      
+      "sceneQ7_description": "In the final section, a curator named Gaukhar awaits you. She summarizes the collected information about your interests.",
+      "sceneQ7_dialog": "Gaukhar: 'There's just one question left to finally determine your strengths. Tell me, which approach is closest to you in teamwork?'",
+      "sceneQ7_choiceCreative": "Inspire with ideas, generate new concepts",
+      "sceneQ7_choiceTech": "Create the technical part and automate processes",
+      "sceneQ7_choiceAnalytical": "Study details, analyze and plan step by step",
+      
+      "sceneEndArtist_description": "You enter the world of art, where the number of exhibitions and galleries in Kazakhstan grows by 10-15% annually, and online platforms open new opportunities for creativity.",
+      "sceneEndArtist_dialog": "Congratulations! Artists are in demand today – more than 15 new exhibitions per year confirm the growth of the art scene!",
+      
+      "sceneEndDesigner_description": "Your works transform both digital space and the real world. The global design industry grows by 6-7% annually, and in Kazakhstan, digital transformation increases the demand for designers.",
+      "sceneEndDesigner_dialog": "Great choice! Designers earn up to 2 million tenge – their creativity changes companies' image!",
+      
+      "sceneEndWriter_description": "Words become a powerful tool of influence. Thanks to online blogging and self-publishing, writers reach a wide audience, and the number of digital publications in Kazakhstan is growing by 20%.",
+      "sceneEndWriter_dialog": "Amazing! Writers inspire masses – their works resonate with thousands of readers!",
+      
+      "sceneEndMusician_description": "Music is your voice in the world of sounds. The global music market is valued in billions of dollars, and in Kazakhstan, the number of music festivals and streaming plays has increased by 30%.",
+      "sceneEndMusician_dialog": "Great! Musicians unite people, and the growth of streaming services speaks for itself!",
+      
+      "sceneEndPhotographer_description": "You see the world through a lens, capturing unique moments. Demand for professional photographers grows by 25% annually thanks to social media popularity.",
+      "sceneEndPhotographer_dialog": "Excellent! Photographers are in demand – the growth in demand for visual content is confirmed by statistics!",
+      
+      "sceneEndProgrammer_description": "Code, algorithms, and innovations are your element. Programmer salaries in Kazakhstan grow by 7-10% annually, and experienced specialists can earn over 1 million tenge.",
+      "sceneEndProgrammer_dialog": "Great choice! Programmers shape the future – their salaries reach 1.2 million tenge and higher!",
+      
+      "sceneEndDataScientist_description": "You analyze huge data sets, finding patterns that help businesses make decisions. Global demand for Data Scientists grows up to 30% per year.",
+      "sceneEndDataScientist_dialog": "Impressive! Data Scientist – a true data alchemist, in demand with growth up to 30% annually!",
+      
+      "sceneEndWebDeveloper_description": "You create websites and applications, making the internet more convenient. In Kazakhstan, business digitalization increases the number of vacancies for web developers, with starting salaries from 700 thousand tenge.",
+      "sceneEndWebDeveloper_dialog": "Perfect! Web developers are architects of virtual space, in demand in the digitalization era!",
+      
+      "sceneEndNetworkEngineer_description": "You ensure connection stability by configuring servers and routers. Telecommunication modernization in Kazakhstan stimulates demand for network engineers, whose salaries grow along with infrastructure.",
+      "sceneEndNetworkEngineer_dialog": "Great! Network engineers are indispensable specialists, as infrastructure updates annually!",
+      
+      "sceneEndGameDeveloper_description": "You create virtual worlds and heroes, bringing ideas to life in video games. The global gaming industry grows by 20% per year, and in Kazakhstan, first studios are emerging, giving talented developers a chance.",
+      "sceneEndGameDeveloper_dialog": "Wonderful! Game developers bring joy, as the games market grows by 20% annually!",
+      
+      "sceneEndTeacher_description": "You teach and inspire new generations. In Kazakhstan, teacher salaries start from 150 thousand tenge, and education reforms increase their demand by 10-15%.",
+      "sceneEndTeacher_dialog": "Perfect! Teachers are guiding stars, as quality education is always valuable!",
+      
+      "sceneEndPsychologist_description": "You help people find harmony and resolve internal conflicts. Global demand for psychologists is growing, and in Kazakhstan, the number of private practices is increasing, expanding opportunities for specialists.",
+      "sceneEndPsychologist_dialog": "Wonderful! Psychologists today are key figures in society's mental health!",
+      
+      "sceneEndHRManager_description": "You manage talents and create effective teams. In large companies in Kazakhstan, demand for HR managers grows by 15% annually, ensuring professional personnel management.",
+      "sceneEndHRManager_dialog": "Excellent! HR managers are key to success, as proper recruitment brings stable growth!",
+      
+      "sceneEndJournalist_description": "You're always at the center of events, creating quality content for digital platforms. The growth of online media in Kazakhstan stimulates demand for journalists, where experience and professionalism are especially valued.",
+      "sceneEndJournalist_dialog": "Wonderful! Journalists are truth bearers, and the digital era opens new horizons for them!",
+      
+      "sceneEndCounselor_description": "You guide people, helping them make the right choice. In Kazakhstan, demand for counselors grows by 10% annually, both in business and personal development.",
+      "sceneEndCounselor_dialog": "Perfect! Counselors give hope and help open new perspectives!",
+      
+      "sceneEndAccountant_description": "You maintain balance and manage financial flows. In Kazakhstan, accountants are in demand: their salaries start from 150 thousand tenge, and demand is stable thanks to business development.",
+      "sceneEndAccountant_dialog": "Great! Accountants are the backbone of finance, as proper accounting ensures success!",
+      
+      "sceneEndEconomist_description": "You analyze economic trends and influence financial strategies. Economists are in demand in both public and private sectors of Kazakhstan, contributing to the country's economic growth.",
+      "sceneEndEconomist_dialog": "Perfect choice! Economists are strategists helping move forward!",
+      
+      "sceneEndResearcher_description": "You constantly seek new knowledge and conduct research that opens new horizons. In Kazakhstan, universities and research institutes actively develop projects, requiring talented researchers.",
+      "sceneEndResearcher_dialog": "Excellent! Researchers expand the boundaries of science and make discoveries that change the world!",
+      
+      "sceneEndMathematician_description": "Your world is equations and formulas, where logic helps see order in chaos. Mathematicians are in demand in IT and financial sectors, and in Kazakhstan, their skills are especially highly valued.",
+      "sceneEndMathematician_dialog": "Great! Mathematicians are the key to complex tasks and process optimization!",
+      
+      "sceneEndFinancialAnalyst_description": "You evaluate investment opportunities and risks, helping companies make informed decisions. In Kazakhstan, financial analysts are in demand, and their salaries can reach 1.7 million tenge in the growing financial sector.",
+      "sceneEndFinancialAnalyst_dialog": "Wonderful! Financial analysts open the path to successful investments and prosperity!"
+    }
+  }

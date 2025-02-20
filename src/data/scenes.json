@@ -1,0 +1,311 @@
+{
+    "SceneEntrance": {
+      "id": "SceneEntrance",
+      "descriptionKey": "sceneEntrance_description",
+      "dialogKey": "sceneEntrance_dialog",
+      "choices": [
+        {
+          "textKey": "sceneEntrance_choiceStart",
+          "nextSceneId": "SceneQ1"
+        }
+      ]
+    },
+  
+    "SceneQ1": {
+      "id": "SceneQ1",
+      "descriptionKey": "sceneQ1_description",
+      "dialogKey": "sceneQ1_dialog",
+      "choices": [
+        {
+          "textKey": "sceneQ1_choiceCreative",
+          "nextSceneId": "SceneQ2",
+          "scores": { "creative": 2 }
+        },
+        {
+          "textKey": "sceneQ1_choiceTech",
+          "nextSceneId": "SceneQ2",
+          "scores": { "tech": 2 }
+        },
+        {
+          "textKey": "sceneQ1_choiceSocial",
+          "nextSceneId": "SceneQ2",
+          "scores": { "social": 2 }
+        }
+      ]
+    },
+  
+    "SceneQ2": {
+      "id": "SceneQ2",
+      "descriptionKey": "sceneQ2_description",
+      "dialogKey": "sceneQ2_dialog",
+      "choices": [
+        {
+          "textKey": "sceneQ2_choiceCreative",
+          "nextSceneId": "SceneQ3",
+          "scores": { "creative": 2, "social": 1 }
+        },
+        {
+          "textKey": "sceneQ2_choiceTech",
+          "nextSceneId": "SceneQ3",
+          "scores": { "tech": 2, "analytical": 1 }
+        },
+        {
+          "textKey": "sceneQ2_choiceAnalytical",
+          "nextSceneId": "SceneQ3",
+          "scores": { "analytical": 2 }
+        }
+      ]
+    },
+  
+    "SceneQ3": {
+      "id": "SceneQ3",
+      "descriptionKey": "sceneQ3_description",
+      "dialogKey": "sceneQ3_dialog",
+      "choices": [
+        {
+          "textKey": "sceneQ3_choiceTech",
+          "nextSceneId": "SceneQ4",
+          "scores": { "tech": 2 }
+        },
+        {
+          "textKey": "sceneQ3_choiceSocial",
+          "nextSceneId": "SceneQ4",
+          "scores": { "social": 2, "creative": 1 }
+        },
+        {
+          "textKey": "sceneQ3_choiceAnalytical",
+          "nextSceneId": "SceneQ4",
+          "scores": { "analytical": 2 }
+        }
+      ]
+    },
+  
+    "SceneQ4": {
+      "id": "SceneQ4",
+      "descriptionKey": "sceneQ4_description",
+      "dialogKey": "sceneQ4_dialog",
+      "choices": [
+        {
+          "textKey": "sceneQ4_choiceCreative",
+          "nextSceneId": "SceneQ5",
+          "scores": { "creative": 2 }
+        },
+        {
+          "textKey": "sceneQ4_choiceTech",
+          "nextSceneId": "SceneQ5",
+          "scores": { "tech": 2, "analytical": 1 }
+        },
+        {
+          "textKey": "sceneQ4_choiceSocial",
+          "nextSceneId": "SceneQ5",
+          "scores": { "social": 2 }
+        }
+      ]
+    },
+  
+    "SceneQ5": {
+      "id": "SceneQ5",
+      "descriptionKey": "sceneQ5_description",
+      "dialogKey": "sceneQ5_dialog",
+      "choices": [
+        {
+          "textKey": "sceneQ5_choiceSocial",
+          "nextSceneId": "SceneQ6",
+          "scores": { "social": 2, "creative": 1 }
+        },
+        {
+          "textKey": "sceneQ5_choiceAnalytical",
+          "nextSceneId": "SceneQ6",
+          "scores": { "analytical": 2 }
+        },
+        {
+          "textKey": "sceneQ5_choiceCreative",
+          "nextSceneId": "SceneQ6",
+          "scores": { "creative": 2 }
+        }
+      ]
+    },
+  
+    "SceneQ6": {
+      "id": "SceneQ6",
+      "descriptionKey": "sceneQ6_description",
+      "dialogKey": "sceneQ6_dialog",
+      "choices": [
+        {
+          "textKey": "sceneQ6_choiceTech",
+          "nextSceneId": "SceneQ7",
+          "scores": { "tech": 2 }
+        },
+        {
+          "textKey": "sceneQ6_choiceSocial",
+          "nextSceneId": "SceneQ7",
+          "scores": { "social": 2 }
+        },
+        {
+          "textKey": "sceneQ6_choiceAnalytical",
+          "nextSceneId": "SceneQ7",
+          "scores": { "analytical": 2 }
+        }
+      ]
+    },
+  
+    "SceneQ7": {
+      "id": "SceneQ7",
+      "descriptionKey": "sceneQ7_description",
+      "dialogKey": "sceneQ7_dialog",
+      "choices": [
+        {
+          "textKey": "sceneQ7_choiceCreative",
+          "nextSceneId": "SceneResult",
+          "scores": { "creative": 2 }
+        },
+        {
+          "textKey": "sceneQ7_choiceTech",
+          "nextSceneId": "SceneResult",
+          "scores": { "tech": 2 }
+        },
+        {
+          "textKey": "sceneQ7_choiceAnalytical",
+          "nextSceneId": "SceneResult",
+          "scores": { "analytical": 2 }
+        }
+      ]
+    },
+  
+    "SceneResult": {
+      "id": "SceneResult",
+      "descriptionKey": "sceneResult_description",
+      "dialogKey": "sceneResult_dialog",
+      "choices": [
+        {
+          "textKey": "sceneResult_proceed",
+          "nextSceneId": ""
+        }
+      ]
+    },
+  
+    "SceneEndArtist": {
+      "id": "SceneEndArtist",
+      "descriptionKey": "sceneEndArtist_description",
+      "dialogKey": "sceneEndArtist_dialog",
+      "choices": []
+    },
+    "SceneEndDesigner": {
+      "id": "SceneEndDesigner",
+      "descriptionKey": "sceneEndDesigner_description",
+      "dialogKey": "sceneEndDesigner_dialog",
+      "choices": []
+    },
+    "SceneEndWriter": {
+      "id": "SceneEndWriter",
+      "descriptionKey": "sceneEndWriter_description",
+      "dialogKey": "sceneEndWriter_dialog",
+      "choices": []
+    },
+    "SceneEndMusician": {
+      "id": "SceneEndMusician",
+      "descriptionKey": "sceneEndMusician_description",
+      "dialogKey": "sceneEndMusician_dialog",
+      "choices": []
+    },
+    "SceneEndPhotographer": {
+      "id": "SceneEndPhotographer",
+      "descriptionKey": "sceneEndPhotographer_description",
+      "dialogKey": "sceneEndPhotographer_dialog",
+      "choices": []
+    },
+  
+    "SceneEndProgrammer": {
+      "id": "SceneEndProgrammer",
+      "descriptionKey": "sceneEndProgrammer_description",
+      "dialogKey": "sceneEndProgrammer_dialog",
+      "choices": []
+    },
+    "SceneEndDataScientist": {
+      "id": "SceneEndDataScientist",
+      "descriptionKey": "sceneEndDataScientist_description",
+      "dialogKey": "sceneEndDataScientist_dialog",
+      "choices": []
+    },
+    "SceneEndWebDeveloper": {
+      "id": "SceneEndWebDeveloper",
+      "descriptionKey": "sceneEndWebDeveloper_description",
+      "dialogKey": "sceneEndWebDeveloper_dialog",
+      "choices": []
+    },
+    "SceneEndNetworkEngineer": {
+      "id": "SceneEndNetworkEngineer",
+      "descriptionKey": "sceneEndNetworkEngineer_description",
+      "dialogKey": "sceneEndNetworkEngineer_dialog",
+      "choices": []
+    },
+    "SceneEndGameDeveloper": {
+      "id": "SceneEndGameDeveloper",
+      "descriptionKey": "sceneEndGameDeveloper_description",
+      "dialogKey": "sceneEndGameDeveloper_dialog",
+      "choices": []
+    },
+  
+    "SceneEndTeacher": {
+      "id": "SceneEndTeacher",
+      "descriptionKey": "sceneEndTeacher_description",
+      "dialogKey": "sceneEndTeacher_dialog",
+      "choices": []
+    },
+    "SceneEndPsychologist": {
+      "id": "SceneEndPsychologist",
+      "descriptionKey": "sceneEndPsychologist_description",
+      "dialogKey": "sceneEndPsychologist_dialog",
+      "choices": []
+    },
+    "SceneEndHRManager": {
+      "id": "SceneEndHRManager",
+      "descriptionKey": "sceneEndHRManager_description",
+      "dialogKey": "sceneEndHRManager_dialog",
+      "choices": []
+    },
+    "SceneEndJournalist": {
+      "id": "SceneEndJournalist",
+      "descriptionKey": "sceneEndJournalist_description",
+      "dialogKey": "sceneEndJournalist_dialog",
+      "choices": []
+    },
+    "SceneEndCounselor": {
+      "id": "SceneEndCounselor",
+      "descriptionKey": "sceneEndCounselor_description",
+      "dialogKey": "sceneEndCounselor_dialog",
+      "choices": []
+    },
+  
+    "SceneEndAccountant": {
+      "id": "SceneEndAccountant",
+      "descriptionKey": "sceneEndAccountant_description",
+      "dialogKey": "sceneEndAccountant_dialog",
+      "choices": []
+    },
+    "SceneEndEconomist": {
+      "id": "SceneEndEconomist",
+      "descriptionKey": "sceneEndEconomist_description",
+      "dialogKey": "sceneEndEconomist_dialog",
+      "choices": []
+    },
+    "SceneEndResearcher": {
+      "id": "SceneEndResearcher",
+      "descriptionKey": "sceneEndResearcher_description",
+      "dialogKey": "sceneEndResearcher_dialog",
+      "choices": []
+    },
+    "SceneEndMathematician": {
+      "id": "SceneEndMathematician",
+      "descriptionKey": "sceneEndMathematician_description",
+      "dialogKey": "sceneEndMathematician_dialog",
+      "choices": []
+    },
+    "SceneEndFinancialAnalyst": {
+      "id": "SceneEndFinancialAnalyst",
+      "descriptionKey": "sceneEndFinancialAnalyst_description",
+      "dialogKey": "sceneEndFinancialAnalyst_dialog",
+      "choices": []
+    }
+  }
+  
